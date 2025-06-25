@@ -7,8 +7,9 @@
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
 </head>
 <body>
+
     <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+    <hr>
 
     <nav>
         <h2>Índice</h2>
@@ -24,64 +25,79 @@
 
     <h2 id="historia">História dos computadores</h2>
     <small><a href="#inicio">(Voltar)</a></small>
-    <p>A história dos computadores remonta a séculos, com conceitos de máquinas de cálculo sendo explorados desde o século XIX. A primeira geração de computadores, que <mark>surgiu entre 1940 e 1956, utilizava válvulas a vácuo e era caracterizada por seu tamanho enorme, alto consumo de energia e baixa confiabilidade.</mark> O ENIAC, um dos primeiros computadores eletrônicos, foi desenvolvido durante a Segunda Guerra Mundial para realizar cálculos de balística. </p>
+    <p>A história dos computadores remonta a séculos, com conceitos de máquinas de cálculo sendo explorados desde o século XIX.</p>
+    <blockquote>
+        <p>A primeira geração de computadores, que <mark>surgiu entre 1940 e 1956</mark>, utilizava válvulas a vácuo e era caracterizada por seu tamanho enorme, alto consumo de energia e baixa confiabilidade.</p>
+    </blockquote>
+    <p>O <u>ENIAC</u>, um dos primeiros computadores eletrônicos, foi desenvolvido durante a Segunda Guerra Mundial para realizar cálculos de balística.</p>
 
     <section>
         <h2 id="clients">O que são <i>Clients</i>?</h2>
         <small><a href="#inicio">(Voltar)</a></small>
-        <p>Em computação, um cliente (ou <i>client</i>) <mark>é uma entidade, geralmente um programa ou dispositivo, que solicita serviços ou recursos de um servidor</mark>. No contexto da arquitetura cliente-servidor, o cliente depende do servidor para fornecer dados ou funcionalidades.</p>
-        <p>Em termos mais simples, imagine que você está acessando um site. O seu navegador (como <i>Chrome</i>, <i>Firefox</i>, etc.) atua como um cliente, enviando uma solicitação ao servidor do site para exibir a página da web. O servidor, por sua vez, envia os dados necessários (como código HTML, CSS e JavaScript) para que o navegador possa renderizar a página e exibi-la para você.</p>
+        <p>Em computação, um cliente (ou <i>client</i>) <mark>é uma entidade, geralmente um programa ou dispositivo, que solicita serviços ou recursos de um servidor</mark>.</p>
+        <p>Imagine que você está acessando um site. Seu navegador (<abbr title="Google Chrome">Chrome</abbr>, <abbr title="Mozilla Firefox">Firefox</abbr>, etc.) atua como cliente, solicitando uma página ao servidor.</p>
+        <p>O servidor então responde com o conteúdo necessário, que é renderizado em sua tela.</p>
     </section>
 
     <section>
         <h2 id="servers">O que são <i>Servers</i>?</h2>
         <small><a href="#inicio">(Voltar)</a></small>
-        <p>Um servidor, ou <i>server</i>, <mark>é um computador ou sistema computacional que fornece serviços, recursos ou dados a outros computadores, conhecidos como clientes, em uma rede</mark>. Ele atua como um ponto central para armazenar, processar e distribuir informações, permitindo a comunicação e o compartilhamento de recursos entre diferentes dispositivos.</p>
-        <p>Em termos mais simples, imagine um servidor como um garçom em um restaurante. Quando você faz um pedido (uma solicitação), o garçom (o servidor) vai até a cozinha (o sistema que processa a informação), prepara o prato (o resultado processado) e o entrega a você (o cliente). </p>
+        <p>Um <strong>servidor</strong> é um sistema que fornece serviços, recursos ou dados para outros dispositivos em uma rede.</p>
+        <p><del>Originalmente, os servidores eram dedicados a funções muito específicas.</del> <ins>Hoje, muitos servidores oferecem múltiplos serviços simultaneamente.</ins></p>
+        <p>Uma analogia simples: <font color="blue">um servidor é como um garçom em um restaurante</font>. Você faz o pedido (requisição), e ele traz a comida (resposta).</p>
     </section>
 
     <section>
         <h2 id="estrutura-basica">Como é uma estrutura básica de um HTML?</h2>
         <small><a href="#inicio">(Voltar)</a></small>
-        <p>A estrutura básica do HTML consiste em três elementos principais: <code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code>. A declaração <code>&lt;!DOCTYPE html&gt;</code> informa ao navegador que o documento está utilizando HTML5. O elemento <code>&lt;html&gt;</code> envolve todo o conteúdo da página, enquanto o <code>&lt;head&gt;</code> contém metadados e links para arquivos externos, e o <code>&lt;body&gt;</code> contém o conteúdo visível da página.</p>
-        <p>A estrutura básica de um documento HTML é a seguinte:</p>
+        <p>Todo documento HTML tem uma estrutura que começa com a declaração <code>&lt;!DOCTYPE html&gt;</code>.</p>
+        <p>Em seguida, vem os elementos <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code>, como mostrado abaixo:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
-    &lt;html lang="pt-BR"&gt;
-    &lt;head&gt;
-        &lt;meta charset="UTF-8"&gt;
-        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-        &lt;title&gt;Título da Página&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;!-- Conteúdo da página aqui --&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
+&lt;html lang="pt-BR"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Conteúdo da página --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
         </code></pre>
+        <p>Exemplo de elemento com sobrescrito: 10<sup>2</sup>. Exemplo com subscrito: H<sub>2</sub>O.</p>
     </section>
 
     <section>
         <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
         <small><a href="#inicio">(Voltar)</a></small>
-        <p>A tag HTML <code>&lt;ol&gt;</code>define uma lista ordenada. Uma lista ordenada pode ser numérica ou alfabética.</p>
-        <p>A tag HTML <code>&lt;ul&gt;</code>define uma lista não ordenada (com marcadores).</p>
+
+        <h3>Lista Ordenada</h3>
+        <p>Usa-se a tag <code>&lt;ol&gt;</code>:</p>
+        <ol>
+            <li>Item número 1</li>
+            <li>Item número 2</li>
+            <li>Item número 3</li>
+        </ol>
+
+        <h3>Lista Não Ordenada</h3>
+        <p>Usa-se a tag <code>&lt;ul&gt;</code>:</p>
         <ul>
-            <li><strong>Lista HTML ordenada:</strong></li>
-            <p>Uma lista ordenada começa com a <code>&lt;ol&gt;</code>tag. Cada item da lista começa com a <code>&lt;li&gt;</code>tag.</p>
-            <p>Os itens da lista serão marcados com números por padrão</p>
-            
-            <li><strong>Listas HTML não ordenadas:</strong></li>
-            <p>Uma lista não ordenada começa com a <code>&lt;ul&gt;</code>tag . Cada item da lista começa com a <code>&lt;li&gt;</code>tag .</p>
-            <p>Os itens da lista serão marcados com marcadores (pequenos círculos pretos) por padrão</p>
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
         </ul>
     </section>
 
     <section>
         <h2 id="referencias">Links de referências</h2>
         <ul>
-            <li><a href="http://dio.me" target="_blank">http://dio.me</a></li>
-            <li><a href="http://w3c.org" target="_blank">http://w3c.org</a></li>
+            <li><a href="http://dio.me" target="_blank">DIO</a></li>
+            <li><a href="http://w3c.org" target="_blank">W3C</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
         </ul>
     </section>
 
+    <hr>
+    <h6>Fim da Página</h6>
 </body>
 </html>
